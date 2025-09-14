@@ -32,8 +32,8 @@ function convertToRoman(num) {
   return result;
 }
 
-// 🔹 Test Cases
-console.log(convertToRoman(14));    // XIV
-console.log(convertToRoman(798));   // DCCXCVIII
-console.log(convertToRoman(36));    // XXXVI
-console.log(convertToRoman(944));   // CMXLIV
+console.log(convertToRoman(0));       // Should return an error or empty string
+console.log(convertToRoman(100000));  // Should return an error or empty string
+console.log(convertToRoman(-5));      // Should return an error or empty string
+console.log(convertToRoman(1));       // I
+console.log(convertToRoman(3999));     // CMXLIV
