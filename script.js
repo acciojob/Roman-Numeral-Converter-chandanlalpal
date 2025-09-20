@@ -24,16 +24,14 @@ function convertToRoman(num) {
 
   for (let [symbol, value] of symbols) {
     while (num >= value) {
-      result += symbol;
       num -= value;
+      result += symbol;
+      
     }
   }
 
   return result;
 }
 
-console.log(convertToRoman(0));       // Should return an error or empty string
-console.log(convertToRoman(100000));  // Should return an error or empty string
-console.log(convertToRoman(-5));      // Should return an error or empty string
-console.log(convertToRoman(1));       // I
-console.log(convertToRoman(3999));     // CMXLIV
+console.log(convertToRoman(14));       // Should return an error or empty string
+     // CMXLIV
